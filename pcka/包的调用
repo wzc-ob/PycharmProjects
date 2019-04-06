@@ -1,0 +1,20 @@
+grand\
+   __init__.py
+   prnta
+       __init__.py
+       suba.py
+       sub\
+          __init__.py
+          sona.py
+   prntb
+       __init__/py
+       subb.py
+       subc.py
+
+同一目录：subb.py调用subc
+ import subc
+同级别包（从父包开始调用）：subb.py suba.py
+ import grnd.prnta import subc
+目录下的子包 suba.py sona.py
+ from .sub import sona
+
